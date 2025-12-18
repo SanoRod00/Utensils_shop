@@ -1,0 +1,4 @@
+- [x] Modify authController.js to load users from a JSON file on startup
+- [x] Save users to JSON file after signup
+- [x] Ensure initial users are persisted if file doesn't exist
+- [ ] Test the persistence by restarting server and checking login
