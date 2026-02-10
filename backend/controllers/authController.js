@@ -37,12 +37,8 @@ const loadUsers = () => {
 
 // Save users to file
 const saveUsers = (userList) => {
-  try {
-    ensureUsersDir();
-    fs.writeFileSync(usersFilePath, JSON.stringify(userList, null, 2));
-  } catch (error) {
-    console.error("Error saving users:", error);
-  }
+  ensureUsersDir();
+  fs.writeFileSync(usersFilePath, JSON.stringify(userList, null, 2));
 };
 
 let userStore = loadUsers();
@@ -59,8 +55,16 @@ export const signup = (req, res) => {
 
   const hashed = bcrypt.hashSync(password, 10);
   const newUser = { id: uuidv4(), name, email, password: hashed, role: "customer" };
-  userStore.push(newUser);
-  saveUsers(userStore);
+
+  try {
+    userStore.push(newUser);
+    saveUsers(userStore);
+  } catch (error) {
+    // Rollback memory change if save fails
+    userStore.pop();
+    console.error("Signup error:", error);
+    return res.status(500).json({ message: "Failed to create account" });
+  }
 
   const token = issueToken({ id: newUser.id, email: newUser.email, role: newUser.role, name: newUser.name });
   res.status(201).json({ token, user: { id: newUser.id, name, email, role: newUser.role } });
