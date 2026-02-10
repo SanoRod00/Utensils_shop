@@ -12,5 +12,19 @@
     "email": "admin@utensils.shop",
     "password": "$2a$10$JSqWGUtobzm4uWwiT2fKBOfETUwF8Z9MOeEWjLVHXGu4o4IdArKFu",
     "role": "admin"
+  },
+  {
+    "id": "91d70fdc-fa48-416e-a938-ce6c4a7b320b",
+    "name": "sano",
+    "email": "sano3@gmail.com",
+    "password": "$2a$10$iTPNMQfMRo5wdMYcyRs3fOaVYQmb61jkJXYeltiNlmLO5ZsqVUDuK",
+    "role": "customer"
+  },
+  {
+    "id": "5a19e6b0-e757-4688-a02d-2ece86d6e186",
+    "name": "peter",
+    "email": "peter1@gmail.com",
+    "password": "$2a$10$XWBrv9tPo3shWezs8v403.RUSwNitbB6/sN5wHLYd6PmLn3YnuIZC",
+    "role": "customer"
   }
 ]
