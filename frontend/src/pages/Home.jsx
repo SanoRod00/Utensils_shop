@@ -1,4 +1,10 @@
+import { useState, useEffect } from "react";
+import api from "../services/api.js";
 import HeroSection from "../components/HeroSection.jsx";
+import FeatureCallouts from "../components/FeatureCallouts.jsx";
+import CategoryGrid from "../components/CategoryGrid.jsx";
+import ProductCard from "../components/ProductCard.jsx";
+import NewsletterForm from "../components/NewsletterForm.jsx";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
