@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import spatulaImg from "../assets/spatula.png";
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -31,7 +32,7 @@ const HeroSection = () => {
                         <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=600&q=80" alt="Knife" />
                     </div>
                     <div className="visual-card card-2 floating-delayed">
-                        <img src="https://images.unsplash.com/photo-1609117370337-cc5c2d338f32?auto=format&fit=crop&w=600&q=80" alt="Spatula" />
+                        <img src={spatulaImg} alt="Spatula" />
                     </div>
                     <div className="visual-bg-circle"></div>
                 </div>
