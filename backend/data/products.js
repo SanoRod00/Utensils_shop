@@ -10,216 +10,216 @@ export const products = [
     id: "ut-1001",
     name: "Carbon Steel Chef's Knife",
     description: "8-inch carbon steel blade with walnut handle, perfectly balanced for effortless prep.",
-    price: 89,
+    price: 115000,
     discount: 10,
     category: "knives",
     stock: 32,
     rating: 4.9,
     reviews: 142,
-    image: "https://images.unsplash.com/photo-1585238342028-274fa9f1464d?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1002",
     name: "Magnetic Knife Block",
     description: "Minimalist ash wood block with dual-strength magnets to cradle your favorite knives.",
-    price: 62,
+    price: 80000,
     discount: 5,
     category: "knives",
     stock: 45,
     rating: 4.7,
     reviews: 88,
-    image: "https://images.unsplash.com/photo-1523325343990-1053e6e2e0e5?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1581788773528-569df2b29158?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1003",
     name: "Silicone Spatula Set",
     description: "Heat-resistant (600°F) silicone spatulas with reinforced cores and soft-touch grip.",
-    price: 28,
+    price: 36000,
     discount: 0,
     category: "cooking",
     stock: 76,
     rating: 4.8,
     reviews: 201,
-    image: "https://images.unsplash.com/photo-1615937964542-65883c0c1b75?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1609117370337-cc5c2d338f32?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1004",
     name: "Tri-Ply Saucepan 2.5QT",
     description: "Even-heating stainless tri-ply saucepan with vented lid for weeknight sauces and grains.",
-    price: 74,
+    price: 96000,
     discount: 12,
     category: "cooking",
     stock: 40,
     rating: 4.6,
     reviews: 119,
-    image: "https://images.unsplash.com/photo-1506368083636-6defb67639a7?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1584269600464-370634ae70a7?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1005",
     name: "Stoneware Baking Dish",
     description: "Matte stoneware that moves from oven to table; retains heat for crisply baked edges.",
-    price: 56,
+    price: 72000,
     discount: 8,
     category: "baking",
     stock: 52,
     rating: 4.8,
     reviews: 77,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1585579737962-d3c52e4634f3?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1006",
     name: "Precision Measuring Set",
     description: "Magnetic stainless measuring cups and spoons with etched markings that never fade.",
-    price: 32,
+    price: 41000,
     discount: 0,
     category: "baking",
     stock: 80,
     rating: 4.9,
     reviews: 133,
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1007",
     name: "Pour-Over Kettle",
     description: "Gooseneck stainless kettle with precision spout and built-in thermometer for control.",
-    price: 64,
+    price: 83000,
     discount: 6,
     category: "serveware",
     stock: 34,
     rating: 4.7,
     reviews: 65,
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1565576161491-1c5c7d0d0463?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1008",
     name: "Acacia Serving Board",
     description: "Thick acacia board with juice groove and chamfered edges—built for slicing or serving.",
-    price: 48,
+    price: 62000,
     discount: 0,
     category: "serveware",
     stock: 71,
     rating: 4.5,
     reviews: 92,
-    image: "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1627484976725-5e6f66205738?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1009",
     name: "Double-Walled Glass Set",
     description: "Lightweight borosilicate glasses that keep drinks hot or cold and condensation free.",
-    price: 36,
+    price: 46000,
     discount: 4,
     category: "serveware",
     stock: 63,
     rating: 4.6,
     reviews: 58,
-    image: "https://images.unsplash.com/photo-1544145945-f90425340c7b?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1571216690467-f7c81d3f9b7c?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1010",
     name: "Sheet Pan Duo",
     description: "Aluminized steel sheet pans with rolled edges, nonstick ceramic coating, and easy cleanup.",
-    price: 44,
+    price: 57000,
     discount: 5,
     category: "baking",
     stock: 59,
     rating: 4.7,
     reviews: 101,
-    image: "https://images.unsplash.com/photo-1573447937314-4ebf433cbae6?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1623158017255-b44c20847250?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1011",
     name: "Cast Iron Skillet 10\"",
     description: "Pre-seasoned cast iron skillet that sears evenly and moves from stovetop to oven.",
-    price: 58,
+    price: 75000,
     discount: 9,
     category: "cooking",
     stock: 44,
     rating: 4.8,
     reviews: 187,
-    image: "https://images.unsplash.com/photo-1604908177225-6c6df4a7c4b0?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1584948835823-3e11d0446712?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1012",
     name: "Stainless Locking Tongs",
     description: "12-inch stainless tongs with scalloped tips and soft-close lock for one-handed use.",
-    price: 22,
+    price: 28000,
     discount: 0,
     category: "cooking",
     stock: 93,
     rating: 4.6,
     reviews: 74,
-    image: "https://images.unsplash.com/photo-1514516430032-7c5c1f1e1f80?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1594186591410-a43058864d39?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1013",
     name: "Santoku Knife 7\"",
     description: "Precision 7-inch santoku with granton edge for smooth cuts through veggies and proteins.",
-    price: 79,
+    price: 102000,
     discount: 7,
     category: "knives",
     stock: 38,
     rating: 4.9,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1542326237-94b1c5a538d8?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1014",
     name: "Ceramic Honing Rod",
     description: "13-inch ceramic honing rod to realign edges and keep knives sharp between sharpening.",
-    price: 34,
+    price: 44000,
     discount: 0,
     category: "knives",
     stock: 64,
     rating: 4.7,
     reviews: 68,
-    image: "https://images.unsplash.com/photo-1529088144328-758f62d4c760?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1589178386348-18e0018b141f?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1015",
     name: "Nested Mixing Bowl Set",
     description: "Five-piece stainless mixing bowls with non-slip bases and etched measurements inside.",
-    price: 52,
+    price: 67000,
     discount: 6,
     category: "baking",
     stock: 72,
     rating: 4.8,
     reviews: 143,
-    image: "https://images.unsplash.com/photo-1481399433301-5cda28f26a12?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1605492807659-19ec6b1d556a?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1016",
     name: "Marble Rolling Pin",
     description: "Chill-ready marble pin with acacia handles that glides for pastry and dough work.",
-    price: 46,
+    price: 59000,
     discount: 5,
     category: "baking",
     stock: 58,
     rating: 4.6,
     reviews: 81,
-    image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa3?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1017",
     name: "Glass Canister Trio",
     description: "Airtight borosilicate canisters with acacia lids for pantry staples and countertop display.",
-    price: 54,
+    price: 70000,
     discount: 0,
     category: "serveware",
     stock: 69,
     rating: 4.7,
     reviews: 97,
-    image: "https://images.unsplash.com/photo-1481399433301-5cda28f26a12?auto=format&fit=crop&w=1200&q=80&sat=-25"
+    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ut-1018",
     name: "Insulated Pour-Over Carafe",
     description: "Double-walled stainless carafe with mesh filter for smooth pour-over or cold brew service.",
-    price: 68,
+    price: 88000,
     discount: 8,
     category: "serveware",
     stock: 47,
     rating: 4.6,
     reviews: 73,
-    image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1565576161491-1c5c7d0d0463?auto=format&fit=crop&w=800&q=80"
   }
 ];

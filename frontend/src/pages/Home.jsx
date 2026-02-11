@@ -1,10 +1,4 @@
-import { useEffect, useState } from "react";
-import GlowTemplate from "../components/GlowTemplate.jsx";
-import FeatureCallouts from "../components/FeatureCallouts.jsx";
-import CategoryGrid from "../components/CategoryGrid.jsx";
-import ProductCard from "../components/ProductCard.jsx";
-import NewsletterForm from "../components/NewsletterForm.jsx";
-import api from "../services/api.js";
+import HeroSection from "../components/HeroSection.jsx";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -25,7 +19,7 @@ const Home = () => {
 
   return (
     <div className="stack">
-      <GlowTemplate />
+      <HeroSection />
       <FeatureCallouts />
       {categories.length > 0 && <CategoryGrid categories={categories} />}
       <section className="section">

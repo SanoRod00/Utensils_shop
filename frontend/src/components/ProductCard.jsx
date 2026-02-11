@@ -34,11 +34,11 @@ const ProductCard = ({ product }) => {
         <p className="muted description-preview">{product.description}</p>
         <div className="product-bottom">
           <div>
-            <strong>${finalPrice.toFixed(2)}</strong>
-            {product.discount ? <span className="strikethrough">${product.price.toFixed(2)}</span> : null}
+            <strong>{finalPrice.toLocaleString()} RWF</strong>
+            {product.discount ? <span className="strikethrough">{product.price.toLocaleString()} RWF</span> : null}
           </div>
           <button className="ghost-btn small" onClick={() => addToCart(product, 1)}>
-            Add to cart
+            Ongeraho
           </button>
         </div>
       </div>

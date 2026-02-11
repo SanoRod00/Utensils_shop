@@ -56,10 +56,10 @@ const ProductDetails = () => {
 
         <div className="detail-price-box">
           <div className="price-display">
-            <strong className="current-price">${finalPrice.toFixed(2)}</strong>
-            {product.discount ? <span className="original-price">${product.price.toFixed(2)}</span> : null}
+            <strong className="current-price">{finalPrice.toLocaleString()} RWF</strong>
+            {product.discount ? <span className="original-price">{product.price.toLocaleString()} RWF</span> : null}
           </div>
-          <p className="shipping-note">Free shipping on all orders over $50</p>
+          <p className="shipping-note">Free shipping on all orders over 50,000 RWF</p>
         </div>
 
         <div className="detail-description">
@@ -69,7 +69,7 @@ const ProductDetails = () => {
 
         <div className="product-actions">
           <button className="primary-btn large full" onClick={() => addToCart(product, 1)} disabled={product.stock === 0}>
-            {product.stock > 0 ? "Add to Cart" : "Out of Stock"}
+            {product.stock > 0 ? "Ongeraho" : "Shize"}
           </button>
         </div>
 
