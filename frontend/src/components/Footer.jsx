@@ -1,30 +1,77 @@
+import "./Footer.css";
+
 const Footer = () => (
-  <footer className="footer">
-    <div className="footer-grid">
-      <div>
+  <footer className="footer-section">
+    <div className="footer-content">
+      <div className="footer-brand">
         <h3>Utensils Shop</h3>
-        <p>Intentional tools, better cooking. Designed to look beautiful on your counter and work even better.</p>
+        <p className="footer-tagline">
+          Elevating your culinary experience with premium tools.
+          <br />
+          Designed for the modern chef.
+        </p>
+        <div className="footer-socials">
+          {/* Placeholders for social icons if needed, using text for now or simple circles */}
+          <span className="social-icon">IG</span>
+          <span className="social-icon">TW</span>
+          <span className="social-icon">FB</span>
+        </div>
       </div>
-      <div>
-        <p className="muted">Support</p>
-        <ul>
-          <li>Shipping & returns</li>
-          <li>Care instructions</li>
-          <li>Warranty</li>
-        </ul>
+
+      <div className="footer-links">
+        <div className="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="/products?category=cooking">Cooking</a></li>
+            <li><a href="/products?category=knives">Knives</a></li>
+            <li><a href="/products?category=baking">Baking</a></li>
+            <li><a href="/products?category=serveware">Serveware</a></li>
+          </ul>
+        </div>
+        <div className="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="/shipping">Shipping & Returns</a></li>
+            <li><a href="/care">Care Instructions</a></li>
+            <li><a href="/warranty">Warranty</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div className="footer-column contact-column">
+          <h4>Contact Us</h4>
+          <ul>
+            <li className="contact-item">
+              <span className="icon">📍</span>
+              <span>Rwanda, Kigali</span>
+            </li>
+            <li className="contact-item">
+              <span className="icon">📧</span>
+              <a href="mailto:sanorod00@gmail.com">sanorod00@gmail.com</a>
+            </li>
+            <li className="contact-item">
+              <span className="icon">📞</span>
+              <a href="tel:+250783242318">+250 783 242 318</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p className="muted">Visit</p>
-        <ul>
-          <li>123 Kitchen Ave, Flavor City</li>
-          <li>hello@utensils.shop</li>
-          <li>+1 (555) 204-1180</li>
-        </ul>
+
+      <div className="footer-newsletter">
+        <h4>Stay in the loop</h4>
+        <p>Subscribe for exclusive drops and culinary tips.</p>
+        <form className="newsletter-form-footer" onSubmit={(e) => e.preventDefault()}>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" className="primary-btn small">Subscribe</button>
+        </form>
       </div>
     </div>
-    <div className="footer-meta">
-      <span>Made for home cooks • Fresh drops monthly</span>
-      <span>© {new Date().getFullYear()} Utensils Shop</span>
+
+    <div className="footer-bottom">
+      <p>© {new Date().getFullYear()} Utensils Shop. All rights reserved.</p>
+      <div className="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
     </div>
   </footer>
 );
