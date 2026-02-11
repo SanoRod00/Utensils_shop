@@ -1,0 +1,41 @@
+/* Payment Options Enhancements */
+.payment-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.payment-icons img {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
+.clean-text {
+    color: #374151;
+    /* Darker than muted */
+    margin: 4px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.payment-pill.active .clean-text {
+    color: #1f2937;
+}
+
+.payment-pill .payment-content strong {
+    font-size: 16px;
+}

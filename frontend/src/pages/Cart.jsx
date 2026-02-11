@@ -2,6 +2,11 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useShop } from "../context/ShopContext.jsx";
 import api from "../services/api.js";
+import mtnLogo from "../assets/payment-icons/mtn.jpg";
+import visaLogo from "../assets/payment-icons/visa.svg";
+import mastercardLogo from "../assets/payment-icons/mastercard.svg";
+import verveLogo from "../assets/payment-icons/verve.png";
+import "./PaymentStyles.css";
 
 const Cart = () => {
   const { cart, updateQuantity, removeFromCart, clearCart, user } = useShop();
@@ -116,9 +121,16 @@ const Cart = () => {
                     checked={paymentMethod === "card"}
                     onChange={(e) => setPaymentMethod(e.target.value)}
                   />
-                  <div>
-                    <strong>Cards</strong>
-                    <p className="muted">Visa, Mastercard, Verve</p>
+                  <div className="payment-content">
+                    <div className="payment-header">
+                      <strong>Cards</strong>
+                      <div className="payment-icons">
+                        <img src={visaLogo} alt="Visa" />
+                        <img src={mastercardLogo} alt="Mastercard" />
+                        <img src={verveLogo} alt="Verve" />
+                      </div>
+                    </div>
+                    <p className="clean-text">Visa, Mastercard, Verve</p>
                   </div>
                 </label>
                 <label className={`payment-pill ${paymentMethod === "momo" ? "active" : ""}`}>
@@ -129,9 +141,14 @@ const Cart = () => {
                     checked={paymentMethod === "momo"}
                     onChange={(e) => setPaymentMethod(e.target.value)}
                   />
-                  <div>
-                    <strong>MoMo Pay (MTN)</strong>
-                    <p className="muted">Mobile money checkout</p>
+                  <div className="payment-content">
+                    <div className="payment-header">
+                      <strong>MoMo Pay (MTN)</strong>
+                      <div className="payment-icons">
+                        <img src={mtnLogo} alt="MTN MoMo" />
+                      </div>
+                    </div>
+                    <p className="clean-text">Mobile money checkout</p>
                   </div>
                 </label>
               </div>
