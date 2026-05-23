@@ -8,7 +8,9 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const usersFilePath = path.join(__dirname, "..", "data", "users.json");
+const usersFilePath = process.env.VERCEL
+  ? "/tmp/users.json"
+  : path.join(__dirname, "..", "data", "users.json");
 
 const ensureUsersDir = () => {
   const dir = path.dirname(usersFilePath);
