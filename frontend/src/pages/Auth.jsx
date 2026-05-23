@@ -64,7 +64,9 @@ const Auth = ({ mode }) => {
       setAuth(res.data.token, res.data.user);
       navigate("/products");
     } catch (err) {
-      setError(err.response?.data?.message || "Something went wrong.");
+      const errorMsg = err.response?.data?.message || err.message || "Something went wrong.";
+      console.error("Auth error:", { status: err.response?.status, data: err.response?.data, message: err.message });
+      setError(errorMsg);
     } finally {
       setLoading(false);
     }
@@ -111,7 +113,12 @@ const Auth = ({ mode }) => {
           <button className="primary-btn full" type="submit" disabled={loading}>
             {loading ? "Submitting..." : isLogin ? "Log in" : "Sign up"}
           </button>
-          {error && <p className="muted">{error}</p>}
+          {error && <p className="muted" style={{ color: "#ef4444" }}>{error}</p>}
+          {isLogin && (
+            <div className="pill subtle" style={{ margin: "12px 0", padding: "10px", fontSize: "13px" }}>
+              <strong>Demo credentials:</strong> ava@example.com / cookbetter
+            </div>
+          )}
         </form>
         <p className="muted">
           {isLogin ? "Need an account?" : "Already have an account?"}{" "}

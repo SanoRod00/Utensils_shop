@@ -26,5 +26,12 @@
     "email": "peter1@gmail.com",
     "password": "$2a$10$XWBrv9tPo3shWezs8v403.RUSwNitbB6/sN5wHLYd6PmLn3YnuIZC",
     "role": "customer"
+  },
+  {
+    "id": "b4723e6e-eaae-4210-b113-0e62577d67d2",
+    "name": "sano",
+    "email": "sano1@gmail.com",
+    "password": "$2a$10$pIKJ5y6HKbVjv48aPmBUS.hgvI7UYnMZQrmgZtY/pJ24QEJYZqwg6",
+    "role": "customer"
   }
 ]
